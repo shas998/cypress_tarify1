@@ -1,0 +1,17 @@
+{
+  "name": "cypress-e2e-tests",
+  "author": "Super Tarify",
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "Super Tarify cypress e2e test runner ",
+  "scripts": {
+    "pretest": "npm install",
+    "test": "./node_modules/cypress/bin/cypress run --record --key 3d96cc13-60e0-4c2a-9d31-2ad08ad22cee --reporter junit --reporter-options 'mochaFile=results/my-test-output.xml,toConsole=true'"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "cypress": "^2.1.0"
+  }
+}
